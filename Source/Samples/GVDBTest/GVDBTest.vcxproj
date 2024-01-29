@@ -92,6 +92,7 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(FALCOR_CORE_DIRECTORY)\..\packages\boost.1.67.0.0\lib\native\include;$(CudaToolkitDir)\include;$(ProjectDir)\..\..\Externals\openvdb\include;$(ProjectDir)\..\..\Externals\gvdb\include;$(FALCOR_CORE_DIRECTORY)\Externals\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

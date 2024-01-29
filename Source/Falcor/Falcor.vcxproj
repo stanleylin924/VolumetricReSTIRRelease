@@ -913,7 +913,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>FALCOR_DLL;IMGUI_API=__declspec(dllexport);_PROJECT_DIR_=R"($(ProjectDir))";_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;FALCOR_D3D12;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions);GLM_FORCE_DEPTH_ZERO_TO_ONE</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\..\Externals\.packman\GLM;$(ProjectDir)\..\Externals\.packman\GLFW\include;$(ProjectDir)\..\Externals\.packman\FreeImage;$(ProjectDir)\..\Externals\.packman\ASSIMP\include;$(ProjectDir)\..\Externals\.packman\FFMpeg\include;$(ProjectDir)\..\Externals\.packman\RapidJson\include;$(ProjectDir)\..\Externals\.packman\VulkanSDK\Include;$(ProjectDir)\..\Externals\.packman\Python\Include;$(ProjectDir)\..\Externals\.packman\pybind11\include;$(ProjectDir)\..\Externals\;$(ProjectDir)\..\Externals\.packman\nvapi;$(ProjectDir)\..\Externals\.packman;$(ProjectDir)\..\Externals\tbb\include;$(ProjectDir)\..\Externals\zlib\include;$(ProjectDir)\..\Externals\openvdb\include;$(ProjectDir)\..\Externals\gvdb\include;$(CudaToolkitDir)\include</AdditionalIncludeDirectories>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ConformanceMode>true</ConformanceMode>
