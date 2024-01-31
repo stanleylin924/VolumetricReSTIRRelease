@@ -62,7 +62,7 @@ OptixDenoiserPass::OptixDenoiserPass(const Dictionary& dict)
     {
         if (key == kEnabled) mEnabled = value;
         else if (key == kBlend) mDenoiser.params.blendFactor = value;
-        else if (key == kDenoiseAlpha) mDenoiser.params.denoiseAlpha = (value ? 1u : 0u);
+        else if (key == kDenoiseAlpha) mDenoiser.params.denoiseAlpha = static_cast<OptixDenoiserAlphaMode>(value ? 1u : 0u);
         else logWarning("Unknown field '" + key + "' in a OptixDenoiserPass dictionary");
     }
 
@@ -362,7 +362,7 @@ void OptixDenoiserPass::renderUI(Gui::Widgets& widget)
             bool denoiseAlpha = mDenoiser.params.denoiseAlpha != 0;
             if (widget.checkbox("Denoise Alpha?", denoiseAlpha))
             {
-                mDenoiser.params.denoiseAlpha = denoiseAlpha ? 1u : 0u;
+                mDenoiser.params.denoiseAlpha = static_cast<OptixDenoiserAlphaMode>(denoiseAlpha ? 1u : 0u);
             }
             widget.tooltip("Enable denoising the alpha channel, not just RGB.");
         }
